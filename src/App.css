@@ -1,0 +1,535 @@
+.dropdown-toggle.variant-custom-brown {
+  color: #5a3e2b !important;
+}
+
+.navnav{
+  font-family: "Garamond", serif !important;
+  font-weight: bold !important;
+  color: #d6c8a7 !important; /* Creamy gold */
+  font-size: 1.2rem !important;
+  letter-spacing: 0.5px !important; 
+}
+
+.fs-6{
+
+  font-family: "EB Garamond", Georgia, serif; /* Fallbacks */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333; /* Soft black for contrast */
+}
+
+.fs-5{
+
+  font-family: "EB Garamond", Georgia, serif; /* Fallbacks */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333; /* Soft black for contrast */
+}
+
+.offcanvas {
+  background-color: #f8f1e4 !important; /* Soft vintage paper */
+  width: 300px !important;
+  border-right: none !important;
+  box-shadow: 4px 0 15px rgba(90, 62, 43, 0.1) !important; /* Subtle shadow */
+  transition: transform 0.3s ease-out;
+}
+
+body.offcanvas-open {
+  overflow: hidden;
+  padding-right: 0 !important;
+}
+
+.offcanvas-header {
+  background-color: #5a3e2b !important; /* Deep brown (modern contrast) */
+  border-bottom: none !important;
+  padding: 1rem 1.5rem !important;
+}
+
+.offcanvas-title {
+  font-family: "Garamond", serif !important;
+  font-weight: bold !important;
+  color: #d6c8a7 !important; /* Creamy gold */
+  font-size: 1.5rem !important;
+  letter-spacing: 0.5px !important; /* Modern touch */
+}
+
+/* Close Button */
+.btn-close {
+  filter: invert(0.8) sepia(1) hue-rotate(10deg) !important; /* Gold tint */
+  opacity: 0.8 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-close:hover {
+  opacity: 1 !important;
+  transform: rotate(90deg) !important; /* Smooth rotation */
+}
+
+/* Menu Links */
+.nav-mobile {
+  color: #5a3e2b !important;
+  font-family: "Georgia", serif !important; /* Modern-serif hybrid */
+  font-weight: 500;
+  padding: 0.75rem 1.5rem !important;
+  border-bottom: 1px solid rgba(90, 62, 43, 0.1) !important; /* Faint divider */
+  transition: all 0.2s ease-out !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.nav-mobile:hover {
+  background-color: rgba(200, 159, 93, 0.1) !important; /* Light gold hover */
+  color: #3b2417 !important; /* Darker brown */
+  padding-left: 1.75rem !important; /* Indent animation */
+}
+
+/* Dropdowns */
+.nav-dropdown-mobile .dropdown-toggle {
+  color: #5a3e2b !important;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem !important;
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(90, 62, 43, 0.1) !important;
+}
+
+.nav-dropdown-mobile .dropdown-menu {
+  background-color: #f5e6cc !important;
+  border: none !important;
+  box-shadow: inset 0 0 10px rgba(90, 62, 43, 0.05) !important; /* Inner glow */
+}
+
+.nav-dropdown-mobile .dropdown-item {
+  color: #5a3e2b !important;
+  padding: 0.6rem 2rem !important; /* Indented */
+  font-size: 0.95rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.nav-dropdown-mobile .dropdown-item:hover {
+  background-color: rgba(200, 159, 93, 0.2) !important;
+  padding-left: 2.2rem !important; /* Hover indent */
+}
+
+/* ===== Modern-Vintage Search Bar ===== */
+.offcanvas-body .d-flex {
+  padding: 1rem 1.5rem !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+}
+
+.offcanvas-body .form-control {
+  background-color: #fff !important;
+  border: 1px solid rgba(90, 62, 43, 0.3) !important;
+  border-radius: 4px !important;
+  padding: 0.5rem 1rem !important;
+  font-family: "Georgia", serif !important;
+  color: #5a3e2b !important;
+  transition: all 0.3s ease !important;
+  box-shadow: none !important;
+}
+
+.offcanvas-body .form-control:focus {
+  border-color: #c89f5d !important; /* Gold focus */
+  box-shadow: 0 0 0 2px rgba(200, 159, 93, 0.3) !important; /* Glow effect */
+}
+
+.offcanvas-body .btn-outline-dark.search {
+  background-color: #5a3e2b !important; /* Deep brown */
+  color: #d6c8a7 !important; /* Cream text */
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 0.5rem !important;
+  font-family: "Garamond", serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+}
+
+.offcanvas-body .btn-outline-dark.search:hover {
+  background-color: #3b2417 !important; /* Darker brown */
+  transform: translateY(-1px) !important; /* Lift effect */
+}
+
+/* Mobile Nav Links */
+.nav-mobile {
+  color: #5a3e2b !important; /* Dark brown text */
+  font-family: "Garamond", serif;
+  font-weight: 500;
+  padding: 12px 20px !important;
+  border-bottom: 1px solid #e0c3a3 !important; /* Subtle divider */
+  transition: all 0.3s ease !important;
+}
+
+.nav-mobile:hover {
+  background-color: #e0c3a3 !important; /* Hover highlight */
+  color: #3b2417 !important; /* Darker text on hover */
+}
+
+/* Mobile Dropdowns */
+.nav-dropdown-mobile {
+  background-color: transparent !important;
+  border: none !important;
+  width: 100% !important;
+}
+
+.nav-dropdown-mobile .dropdown-toggle {
+  color: #5a3e2b !important;
+  font-family: "Garamond", serif;
+  font-weight: 500;
+  padding: 12px 20px !important;
+  border-bottom: 1px solid #e0c3a3 !important;
+  background-color: transparent !important;
+}
+
+.nav-dropdown-mobile .dropdown-menu {
+  background-color: #f5e6cc !important;
+  border: none !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  box-shadow: none !important;
+}
+
+.nav-dropdown-mobile .dropdown-item {
+  color: #5a3e2b !important;
+  padding: 10px 30px !important; /* Indented for hierarchy */
+  border-bottom: 1px solid #e0c3a3 !important;
+}
+
+.nav-dropdown-mobile .dropdown-item:hover {
+  background-color: #e0c3a3 !important;
+}
+
+/* Search Bar in Offcanvas */
+.offcanvas-body .form-control {
+  background-color: #fff !important;
+  border: 1px solid #5a3e2b !important;
+  margin: 20px 15px 10px !important;
+  font-family: "Georgia", serif;
+}
+
+.offcanvas-body .btn-outline-dark.search {
+  background-color: #8e6a4f !important;
+  color: white !important;
+  border: 1px solid #5a3e2b !important;
+  margin: 0 15px 20px !important;
+  width: calc(100% - 30px) !important;
+}
+
+.offcanvas-body .btn-outline-dark.search:hover {
+  background-color: #c89f5d !important;
+}
+
+/* Close Button Styling */
+.btn-close {
+  filter: invert(1) brightness(2) !important; /* White close button */
+}
+
+.nav-mobile {
+  color: #343a40 !important;  /* Custom color for nav links */
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #007bff !important;  /* Hover color for links */
+}
+
+/* Vintage Background Color for Navbar */
+.navbar-dark {
+  background-color: #5a3e2b;  /* Muted Dark Gray */
+}
+
+/* Vintage Navbar Links Color */
+.navbar-dark .nav-link {
+  color: #d6c8a7 !important;  /* Light tan for links */
+}
+
+.navbar-dark .nav-link:hover {
+  color: #c89f5d !important;  /* Mustard Yellow on hover */
+}
+
+/* Additional Button Styling */
+.navbar-dark .btn-outline-dark {
+  background-color: #8e6a4f;  /* Warm brown background for buttons */
+  color: #fff;
+}
+
+.navbar-dark .btn-outline-dark:hover {
+  background-color: #c89f5d;  /* Mustard yellow hover */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  background-color: #f5e6cc !important; /* Vintage beige background */
+  border: 1px solid #5a3e2b; /* Antique dark brown border */
+  border-radius: 8px; /* Rounded corners for elegance */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Dropdown Item Styling */
+.dropdown-item {
+  color: #5a3e2b !important; /* Dark brown text */
+  font-weight: 500;
+  font-family: "Garamond", serif; /* Vintage font feel */
+  padding: 10px 15px; /* Spacing for elegance */
+}
+
+/* Dropdown Item Hover Effect */
+.dropdown-item:hover {
+  background-color: #e0c3a3 !important; /* Slightly darker beige for hover */
+  color: #3b2417 !important; /* Deeper brown on hover */
+  font-weight: bold;
+}
+
+/* Offcanvas Styling for Mobile */
+.offcanvas {
+  background-color: #f5e6cc !important;
+}
+.offcanvas-title {
+  color: #ffffff !important;
+  font-family: "Garamond", serif;
+}
+
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-carousel .carousel-item {
+  height: 90vh;
+}
+
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1); /* Start zoomed in */
+  animation: slow-zoom-out 9s ease-out forwards;
+}
+
+.carousel-item.active .hero-slide {
+  transform: scale(1); /* Zoom out to normal size */
+}
+
+.hero-overlay {
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-family: "Garamond", serif;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.hero-text {
+  font-size: 1.3rem;
+  font-family: "Georgia", serif;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+.hero-slide:hover .hero-title {
+  font-size: 3.5rem;
+  transform: scale(1.1);
+}
+
+.hero-slide:hover .hero-text {
+  font-size: 1.5rem;
+  transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero,
+  .hero-carousel .carousel-item,
+  .hero-slide {
+    height: 70vh;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.1rem;
+  }
+
+  .hero-slide:hover .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-slide:hover .hero-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .hero-carousel .carousel-item,
+  .hero-slide {
+    height: 60vh;
+  }
+
+  .hero-overlay {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-slide:hover .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-slide:hover .hero-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero,
+  .hero-carousel .carousel-item,
+  .hero-slide {
+    height: 50vh;
+  }
+
+  .hero-overlay {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+  }
+
+  .hero-slide:hover .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-slide:hover .hero-text {
+    font-size: 1rem;
+  }
+}
+
+
+/* Gallery Section */
+.gallery-container {
+  padding: 40px 0;
+}
+
+/* Title Styling */
+.gallery-title {
+  font-family: "Garamond", serif;
+  font-weight: bold !important;
+  font-size: 5rem;
+  color: #5a3e2b; /* Vintage brown */
+  margin-bottom: 20px;
+
+  @media (max-width: 992px) {
+    font-size: 4rem;
+  }
+  
+  /* Small screens (large phones) */
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+  
+  /* Extra small screens */
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
+
+}
+
+.hero-title-section {
+  font-family: "Garamond", serif;
+  font-weight: bold !important;
+  font-size: 5rem;
+  color: #fff !important; /* Vintage brown */
+  margin-bottom: 20px;
+
+  @media (max-width: 992px) {
+    font-size: 4rem;
+  }
+  
+  /* Small screens (large phones) */
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+  
+  /* Extra small screens */
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
+
+}
+
+/* Card Styling */
+.photo-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  overflow: hidden;
+  background-color: #f8f1e4; /* Vintage paper color */
+}
+
+/* Image Hover Effect */
+.photo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Photo Link */
+.photo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Photo Image */
+.photo-img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Photo Title */
+.photo-title {
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5a3e2b; /* Vintage tone */
+}
+
+@keyframes slow-zoom-out {
+  from {
+    transform: scale(1.1); /* Start slightly zoomed in */
+  }
+  to {
+    transform: scale(1); /* End at normal size */
+  }
+}
