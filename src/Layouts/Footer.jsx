@@ -7,9 +7,9 @@ const Footer = () => {
       <Container>
         <Row className="text-center text-md-start">
           <Col md={6} className="mb-3 mb-md-0">
-            <h5 className="fw-bold navnav">E-Tuklas</h5>
+            <h5 className="fw-bold navnav">E - Tuklas</h5>
             <p className="mb-0 navnav" style={{ fontSize: "0.95rem" }}>
-              Preserving the heritage and culture for future generations.
+            Pangangalaga at pagpapahalaga sa pamana at kultura ng Itim na Nazareno ng Capalonga.
             </p>
           </Col>
           <Col md={6} className="text-md-end">

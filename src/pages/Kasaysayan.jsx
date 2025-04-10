@@ -7,8 +7,9 @@ import nazareneImage2 from "../assets/images/k_secondphoto.jpg";
 import nazareneImage3 from "../assets/images/k_thirdphoto.jpg";
 import nazareneImage4 from "../assets/images/k_fourthphoto.jpg"; // Keeps your original image
 import aboutHero from "../assets/images/traslacion-2.jpg"; // Use your hero banner image here
+import { motion } from "framer-motion";
 
-const About = () => {
+const Kasaysayan = () => {
   const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
@@ -26,8 +27,12 @@ const About = () => {
 
   return (
     <>
-      {/* Hero Banner */}
-      <div
+      {/* Hero Banner with Framer Motion */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2 }}
+        className="shadow"
         style={{
           backgroundImage: `url(${aboutHero})`,
           backgroundSize: "cover",
@@ -43,8 +48,11 @@ const About = () => {
           margin: "1rem",
         }}
       >
-        {/* Dark overlay */}
-        <div
+        {/* Dark overlay with fade-in */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.5 }}
+          transition={{ duration: 1.5, delay: 0.3 }}
           style={{
             position: "absolute",
             top: 0,
@@ -54,16 +62,20 @@ const About = () => {
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             borderRadius: "1rem",
           }}
-        ></div>
+        />
 
-        {/* Text Content */}
-        <div style={{ position: "relative", zIndex: 2 }}>
+        {/* Text Content with fade-up */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          style={{ position: "relative", zIndex: 2 }}
+        >
           <h1 style={{ fontWeight: "bold" }} className="hero-title-section">
             Ang Kasaysayan
           </h1>
-          <p></p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Main Content */}
       <Container className="my-5">
@@ -81,7 +93,7 @@ const About = () => {
             data-aos-duration="600"
             data-aos-anchor-placement="top-center"
           />
-          <h2 className="text-start gallery-title mt-5">Ang Kwento</h2>
+          <h2 className="text-start gallery-title mt-5" data-aos="fade-right">Ang Kwento</h2>
           <p className="fs-6">
             Ang kwento ng pag-iral ng Itim na Nazareno ng Capalonga ay nagmula
             sa mga salaysay na ipinasa-pasa mula sa bibig ng mga tao mula sa
@@ -151,7 +163,7 @@ const About = () => {
             data-aos-duration="600"
             data-aos-anchor-placement="top-center"
           />
-          <h2 className="text-end gallery-title mt-5">Ang mga Himala</h2>
+          <h2 className="text-end gallery-title mt-5" data-aos="fade-left">Ang mga Himala</h2>
 
           <p className="fs-6">
             Ang mga himala na inuugma sa Itim na Nazareno ng Capalonga ay
@@ -244,7 +256,7 @@ const About = () => {
             data-aos-duration="600"
             data-aos-anchor-placement="top-center"
           />
-          <h2 className="text-start gallery-title mt-5">Ang Simbahan</h2>
+          <h2 className="text-start gallery-title mt-5" data-aos="fade-right">Ang Simbahan</h2>
           <p className="fs-6">
             Sa parehong taon, ang simbahan ay binigyan ng isang kampana hindi
             lamang upang tawagin ang mga katutubo sa mga serbisyo sa simbahan,
@@ -319,7 +331,7 @@ const About = () => {
             data-aos-duration="600"
             data-aos-anchor-placement="top-center"
           />
-          <h2 className="text-end gallery-title mt-5">Ang Simbahan</h2>
+          <h2 className="text-end gallery-title mt-5" data-aos="fade-left">Ang Simbahan</h2>
 
           <p className="fs-6">
             Si <strong>Fr. Luis R. Ayo</strong> ang nagsimula ng renovasyon ng
@@ -392,4 +404,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Kasaysayan;

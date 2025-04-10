@@ -1,26 +1,74 @@
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-
-// Placeholder image URLs - replace with your actual image paths
+import React, { useEffect } from "react";
+import { Container, Row, Col, Card, Table } from "react-bootstrap";
 import impormasyonImage from "../assets/images/i_firstphoto.jpg";
 import impormasyonImage2 from "../assets/images/i_secondphoto.jpeg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
-  // Vintage brown color palette
-  const vintageColors = {
-    background: "#f5f1e6",
-    darkBrown: "#3a2e24",
-    mediumBrown: "#6b4f3b",
-    lightBrown: "#a38f78",
-    accent: "#8c6a4d",
-    text: "#3a2e24",
+
+  useEffect(() => {
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-quad",
+        once: true,
+        offset: 120,
+        delay: 0,
+        mirror: false,
+      });
+  
+      return () => AOS.refresh();
+    }, []);
+  // Theme styles
+  const altarTheme = {
+    background: "#fdf6ec",
+    gold: "#d5ae74",
+    deepWood: "#4b2e16",
+    softText: "#5f4c3c",
+    imageFilter: "sepia(25%) contrast(1.05)",
   };
+
+  // Researcher data with additional details for the table
+  const researchers = [
+    {
+      img: impormasyonImage,
+      name: "Entienza, Monica L.",
+      email: "monicaentienza03@gmail.com",
+      details: [
+        { label: "Sulatroneko", value: "monicaentienza03@gmail.com" },
+        {
+          label: "Kurso",
+          value: "Batsilyer ng Pansekondaryang Edukasyon Medyor sa Filipino",
+        },
+        {
+          label: "Paaralan",
+          value: "Camarines Norte State College – Abaño Campus",
+        },
+      ],
+    },
+    {
+      img: impormasyonImage2,
+      name: "Valdez, John Paulo",
+      email: "johnpaulovaldez24@gmail.com",
+      details: [
+        { label: "Sulatroneko", value: "johnpaulovaldez24@gmail.com" },
+        {
+          label: "Kurso",
+          value: "Batsilyer ng Pansekondaryang Edukasyon Medyor sa Filipino",
+        },
+        {
+          label: "Paaralan",
+          value: " Camarines Norte State College – Abaño Campus ",
+        },
+      ],
+    },
+  ];
 
   return (
     <Container
       className="py-5"
       style={{
-        backgroundColor: vintageColors.background,
+        backgroundColor: altarTheme.background,
         borderRadius: "8px",
       }}
     >
@@ -28,156 +76,138 @@ const Contact = () => {
         <Col>
           <h2
             style={{
-              color: vintageColors.darkBrown,
+              color: altarTheme.deepWood,
               fontFamily: "'Times New Roman', serif",
               fontWeight: "bold",
-              letterSpacing: "1px",
             }}
+            data-aos="fade-up"
           >
-            Impormasyon
+            Impormasyon ng
           </h2>
           <h3
             style={{
-              color: vintageColors.mediumBrown,
+              color: altarTheme.gold,
               fontFamily: "'Times New Roman', serif",
-              fontWeight: "normal",
               fontStyle: "italic",
             }}
+            data-aos="fade-up"
           >
-            Mga Mananaliksik
+            mga Mananaliksik
           </h3>
           <p
             style={{
-              color: vintageColors.text,
+              color: altarTheme.softText,
               fontFamily: "'Palatino', serif",
               maxWidth: "600px",
               margin: "0 auto",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          
           </p>
         </Col>
       </Row>
 
       <Row className="justify-content-center">
-        {/* First Team Member Card */}
-        <Col md={6} lg={5} className="mb-4">
-          <Card
-            className="h-100 photo-card shadow-lg"
-            style={{
-              backgroundColor: "transparent",
-              border: `0px solid ${vintageColors.accent}`,
-              borderRadius: "4px",
-              overflow: "hidden",
-            }}
-          >
-            <div
+        {researchers.map((researcher, idx) => (
+          <Col md={6} lg={5} className="mb-4" key={idx}>
+            <Card
+              className="h-100 shadow photo-card"
               style={{
-                height: "600px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderRadius: "6px",
                 overflow: "hidden",
-                borderBottom: `1px solid ${vintageColors.accent}`,
               }}
             >
-              <Card.Img
-                variant="top"
-                src={impormasyonImage}
-                alt="Monica Entienza"
+              {/* Researcher Photo */}
+              <div
                 style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  filter: "sepia(30%) contrast(1.1)",
-                }}
-              />
-            </div>
-            <Card.Body
-              className="text-center p-4"
-              style={{
-                backgroundColor: vintageColors.lightBrown,
-              }}
-            >
-              <Card.Title
-                className="mb-0"
-                style={{
-                  color: vintageColors.darkBrown,
-                  fontFamily: "'Times New Roman', serif",
-                  fontWeight: "bold",
+                  height: "600px", // Adjusted height to fit table
+                  overflow: "hidden",
+                  borderBottom: `4px solid ${altarTheme.gold}`,
                 }}
               >
-                Entienza, Monica L.
-              </Card.Title>
-              <Card.Text
-                style={{
-                  color: vintageColors.mediumBrown,
-                  fontFamily: "'Palatino', serif",
-                  fontStyle: "italic",
-                }}
-              >
-                monicaentienza03@gmail.com
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+                <Card.Img
+                  variant="top"
+                  src={researcher.img}
+                  alt={researcher.name}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    filter: altarTheme.imageFilter,
+                  }}
+                />
+              </div>
 
-        {/* Second Team Member Card */}
-        <Col md={6} lg={5} className="mb-4">
-          <Card
-            className="h-100 photo-card shadow-lg"
-            style={{
-              backgroundColor: "transparent",
-              border: `0px solid ${vintageColors.accent}`,
-              borderRadius: "4px",
-              overflow: "hidden",
-            }}
-          >
-            <div
-              style={{
-                height: "600px",
-                overflow: "hidden",
-                borderBottom: `1px solid ${vintageColors.accent}`,
-              }}
-            >
-              <Card.Img
-                variant="top"
-                src={impormasyonImage2}
-                alt="Ella Grace"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  filter: "sepia(30%) contrast(1.1)",
-                }}
-              />
-            </div>
-            <Card.Body
-              className="text-center p-4"
-              style={{
-                backgroundColor: vintageColors.lightBrown,
-              }}
-            >
-              <Card.Title
-                className="mb-0"
-                style={{
-                  color: vintageColors.darkBrown,
-                  fontFamily: "'Times New Roman', serif",
-                  fontWeight: "bold",
-                }}
+              {/* Researcher Info + Table */}
+              <Card.Body
+                className="text-center p-4"
+                style={{ backgroundColor: altarTheme.background }}
               >
-                Valdez, John Paulo
-              </Card.Title>
-              <Card.Text
-                style={{
-                  color: vintageColors.mediumBrown,
-                  fontFamily: "'Palatino', serif",
-                  fontStyle: "italic",
-                }}
-              >
-                johnpaulovaldez24@gmail.com
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+                <Card.Title
+                  style={{
+                    color: altarTheme.deepWood,
+                    fontFamily: "'Times New Roman', serif",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {researcher.name}
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    color: altarTheme.softText,
+                    fontFamily: "'Palatino', serif",
+                    fontStyle: "italic",
+                  }}
+                >
+                
+                </Card.Text>
+
+                {/* Table Inside Card */}
+                <Table
+                  striped
+                  borderless
+                  hover
+                  size="lg"
+                  style={{
+                    marginTop: "1rem",
+                    backgroundColor: altarTheme.background,
+                    color: altarTheme.softText,
+                    borderColor: altarTheme.gold,
+                  }}
+                >
+                  <tbody>
+                    {researcher.details.map((detail, index) => (
+                      <tr key={index}>
+                        <td
+                          className="text-start"
+                          style={{
+                            fontWeight: "bold",
+                            color: altarTheme.deepWood,
+                            fontFamily: "'Times New Roman', serif",
+                          }}
+                        >
+                          {detail.label}
+                        </td>
+                        <td
+                          className="text-start"
+                          style={{
+                            color: altarTheme.softText,
+                            fontFamily: "'Palatino', serif",
+                            fontStyle: "italic",
+                          }}
+                        >
+                          {detail.value}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </Table>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
       </Row>
     </Container>
   );

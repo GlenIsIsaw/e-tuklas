@@ -436,6 +436,46 @@ body.offcanvas-open {
   }
 }
 
+.noselect {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+/Edge */
+}
+
+
+.vintage-wrapper {
+  background-color: #f1e7d0;
+  padding: 70px 0;
+}
+
+.vintage-card {
+  background-color: #f9f3e9;
+  border: 2px solid #bca27e;
+  color: #4e3629;
+  box-shadow: 0 8px 24px rgba(80, 60, 40, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.vintage-card .card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #6b4c3b;
+}
+
+.vintage-card .card-text {
+  color: #5a4332;
+  font-size: 1.1rem;
+}
+
+.vintage-card img {
+  object-fit: cover;
+  height: 100%;
+}
+
+
+
 
 /* Gallery Section */
 .gallery-container {
