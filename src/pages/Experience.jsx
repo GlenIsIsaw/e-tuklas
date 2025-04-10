@@ -50,8 +50,8 @@ const Experience = () => {
          transition={{ duration: 0.8, delay: 0.6 }}
          style={{ position: "relative", zIndex: 2 }}
        >
-         <h1 style={{ fontWeight: "bold" }} className="hero-title-section">
-           Pag - Danas
+         <h1 style={{ fontWeight: "bold", fontFamily: "Georgia, serif" }} className="hero-title-section">
+           Danas
          </h1>
        </motion.div>
      </motion.div>
