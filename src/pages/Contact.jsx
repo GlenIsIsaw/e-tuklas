@@ -169,6 +169,7 @@ const Contact = () => {
                   striped
                   borderless
                   hover
+                  responsive
                   size="lg"
                   style={{
                     marginTop: "1rem",
