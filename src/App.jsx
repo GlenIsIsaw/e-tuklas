@@ -35,7 +35,7 @@ function App() {
         <Route path="pasasalamat" element={<Pasasalamat />} />
         </Route>
         <Route path="/tradisyon" element={<Tradition/>} >
-        <Route path="esperituwal" element={<Esperituwal />} />
+        <Route path="espirituwal" element={<Esperituwal />} />
         <Route path="kultural" element={<Kultural />} />
         </Route>
         <Route path="/search-results" element={<Search />} />

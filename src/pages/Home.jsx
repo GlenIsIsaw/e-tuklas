@@ -21,7 +21,7 @@ const photos = [
   },
   {
     id: 2,
-    title: "Pag - Danas",
+    title: "Danas",
     image: heroImage4,
     link: "/cultures",
   },

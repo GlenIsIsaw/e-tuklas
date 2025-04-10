@@ -130,7 +130,7 @@ const NavbarPage = () => {
               </Nav.Link>
                   {/* Experience Dropdown - Hover Enabled */}
               <NavDropdown
-                title="Pag - Danas"
+                title="Danas"
                 id="experience-dropdown"
                 show={dropdownOpen === "experience"}
                 onMouseEnter={() => handleMouseEnter("experience")}
@@ -160,8 +160,8 @@ const NavbarPage = () => {
                 onMouseLeave={handleMouseLeave}
                 className="mx-2 navnav"
               >
-                <NavDropdown.Item as={Link} to="/tradisyon/esperituwal">
-                  Esperituwal
+                <NavDropdown.Item as={Link} to="/tradisyon/espirituwal">
+                Espirituwal
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/tradisyon/kultural">
                   Kultural
@@ -208,7 +208,7 @@ const NavbarPage = () => {
             </Nav.Link>
            
             {/* Experience Dropdown for Mobile (Click to Open) */}
-            <NavDropdown title="Pag - Danas" id="experience-dropdown-mobile" className="nav-mobile" variant="custom-brown">
+            <NavDropdown title="Danas" id="experience-dropdown-mobile" className="nav-mobile" variant="custom-brown">
               <NavDropdown.Item as={Link} to="/pag-danas/hiling" onClick={handleClose}>
                 Hiling
               </NavDropdown.Item>
@@ -225,8 +225,8 @@ const NavbarPage = () => {
 
             {/* Traditions Dropdown for Mobile (Click to Open) */}
             <NavDropdown title="Tradisyon" id="tradition-dropdown-mobile" className="nav-mobile">
-              <NavDropdown.Item as={Link} to="/tradisyon/esperituwal" onClick={handleClose}>
-                Esperituwal
+              <NavDropdown.Item as={Link} to="/tradisyon/espirituwal" onClick={handleClose}>
+              Espirituwal
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/tradisyon/kultural" onClick={handleClose}>
                Kultura
