@@ -31,7 +31,7 @@ const Esperituwal = () => {
         kanilang pang-araw-araw na pamumuhay.
       </p>
       <h2 className="text-start gallery-title mt-5" data-aos="fade-right">
-        Esperituwal Na Tradisyon
+        Espirituwal Na Tradisyon
       </h2>
 
       <p className="fs-6">
