@@ -71,7 +71,7 @@ const Kasaysayan = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           style={{ position: "relative", zIndex: 2 }}
         >
-          <h1 style={{ fontWeight: "bold" }} className="hero-title-section">
+          <h1 style={{ fontWeight: "bold", fontFamily: "Georgia, serif" }} className="hero-title-section">
             Ang Kasaysayan
           </h1>
         </motion.div>
