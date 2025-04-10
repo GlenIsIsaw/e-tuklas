@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NavImg from '../assets/images/logo.png';
 import { useNavigate } from "react-router-dom";
 import {
   Navbar,
@@ -105,7 +106,7 @@ const NavbarPage = () => {
          <Navbar.Brand href="/">
             <img
               alt=""
-              src="./src/assets/images/a90a546d-93ca-43c6-b931-99c062f67ed1-removebg-preview-Picsart-AiImageEnhancer (1).png"
+              src={NavImg}
               width="120"
               height=""
               className="d-inline-block align-middle"

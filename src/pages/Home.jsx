@@ -223,7 +223,7 @@ const Home = () => {
                     <Col md={5}>
                       <Card.Img
                         className="img-fluid h-100 rounded-start"
-                        src="./src/assets/images/k_secondphoto.jpg"
+                        src={heroImage6}
                         alt="Vintage"
                       />
                     </Col>
